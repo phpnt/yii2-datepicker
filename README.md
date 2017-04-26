@@ -43,10 +43,10 @@ use phpnt\datepicker\BootstrapDatepicker;
 ?>
 ```
 ```php
-<!-- минимальная настройка -->
+// минимальная настройка
 <?= $form->field($model, 'date')->widget(BootstrapDatepicker::className()) ?>
 <?= BootstrapDatepicker::widget(['name'  => 'date']) ?>
-<!-- полная настройка -->
+// полная настройка 
 <?= $form->field($model, 'date')->widget(BootstrapDatepicker::className(),
             [
                 'type'                  => BootstrapDatepicker::TYPE_RANGE,     // тип виджета TYPE_TEXT, TYPE_COMPONENT, TYPE_EMBEDDED, TYPE_RANGE (по умолчанию TYPE_TEXT)
