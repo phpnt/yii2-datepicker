@@ -1,0 +1,29 @@
+{
+    "name": "phpnt/yii2-datepicker",
+    "description": "Yii2 Datepicker",
+    "keywords": ["yii2", "phpnt", "datepicker", "yii2 date picker"],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "minimum-stability" : "dev",
+    "prefer-stable": true,
+    "support": {
+        "source": "https://github.com/phpnt/yii2-datepicker"
+    },
+    "authors": [
+        {
+            "name": "phpNT",
+            "email": "phpnt@phpnt.com",
+            "homepage": "http://phpnt.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*",
+        "bower-asset/bootstrap-datepicker": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "phpnt\\datepicker\\": ""
+        }
+    }
+}
