@@ -44,10 +44,10 @@ use phpnt\datepicker\BootstrapDatepicker;
 ```
 ```php
 // минимальная настройка
-<?= $form->field($model, 'date')->widget(BootstrapDatepicker::className()) ?>
-<?= BootstrapDatepicker::widget(['name'  => 'date']) ?>
+echo $form->field($model, 'date')->widget(BootstrapDatepicker::className());
+echo BootstrapDatepicker::widget(['name'  => 'date']);
 // полная настройка 
-<?= $form->field($model, 'date')->widget(BootstrapDatepicker::className(),
+echo $form->field($model, 'date')->widget(BootstrapDatepicker::className(),
             [
                 'type'                  => BootstrapDatepicker::TYPE_RANGE,     // тип виджета TYPE_TEXT, TYPE_COMPONENT, TYPE_EMBEDDED, TYPE_RANGE (по умолчанию TYPE_TEXT)
                 'attribute_2'           => 'date2', // только для типа TYPE_RANGE
@@ -90,7 +90,7 @@ use phpnt\datepicker\BootstrapDatepicker;
                 'updateViewDate'        => true,
                 'weekStart'             => 0,       // начало недели (значения от 0 до 6)
                 'zIndexOffset'          => 10,
-            ]) ?>
+            ]);
 ```
 ------------
 # Документация (примеры):
