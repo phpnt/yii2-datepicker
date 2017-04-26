@@ -42,7 +42,7 @@ composer require phpnt/yii2-datepicker
 use phpnt\datepicker\BootstrapDatepicker;
 ?>
 ```
-```html
+```php
 <!-- минимальная настройка -->
 <?= $form->field($model, 'date')->widget(BootstrapDatepicker::className()) ?>
 <?= BootstrapDatepicker::widget(['name'  => 'date']) ?>
