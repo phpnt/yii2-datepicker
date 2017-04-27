@@ -34,20 +34,6 @@ class BootstrapDatepickerAsset extends AssetBundle
 
     public function init()
     {
-        $this->registerJs();
         parent::init();
-    }
-
-    protected function registerJs()
-    {
-        $js = <<<JS
-        $('.datepicker').datepicker({
-            format: 'dd.mm.yyyy',
-            language: 'ru',
-            autoclose: true
-        });
-JS;
-        \Yii::$app->view->registerJs($js);
-        return $this;
     }
 }
