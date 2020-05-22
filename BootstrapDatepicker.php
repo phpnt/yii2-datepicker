@@ -9,8 +9,8 @@
 namespace phpnt\datepicker;
 
 use yii\helpers\Json;
-use yii\widgets\InputWidget;
-use yii\bootstrap\Html;
+use yii\bootstrap4\InputWidget;
+use yii\bootstrap4\Html;
 
 class BootstrapDatepicker extends InputWidget
 {
